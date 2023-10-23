@@ -2,26 +2,23 @@ import * as React from "react"
 import {
   ChakraProvider,
   Box,
-  Text,
-  Link,
   VStack,
-  Code,
-  Grid,
-  theme,
+  Divider,
 } from "@chakra-ui/react"
-import { ColorModeSwitcher } from "./components/ColorModeSwitcher"
+import {NavigationBar} from "./components/NavigationBar";
+import theme from './styles/theme'
+import {Intro} from "./components/Intro";
+import {ProjectList} from "./components/ProjectList";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <Box textAlign="center" fontSize="xl">
-      <Grid minH="100vh" p={3}>
-        <ColorModeSwitcher justifySelf="flex-end" />
-        <VStack spacing={8}>
-          <Text>
-            Edit <Code fontSize="xl">src/App.tsx</Code> and save to reload.
-          </Text>
-        </VStack>
-      </Grid>
+    <Box>
+      <VStack>
+        <NavigationBar/>
+        <Intro/>
+        <Divider/>
+        <ProjectList/>
+      </VStack>
     </Box>
   </ChakraProvider>
 )
