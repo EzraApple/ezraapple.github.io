@@ -2,23 +2,19 @@ import * as React from "react"
 import {
   ChakraProvider,
   Box,
-  VStack,
-  Divider,
 } from "@chakra-ui/react"
 import {NavigationBar} from "./components/NavigationBar";
 import theme from './styles/theme'
-import {Intro} from "./components/Intro";
-import {ProjectList} from "./components/ProjectList";
+import {Main} from "./components/Main";
+import {useState} from "react";
 
-export const App = () => (
+export const App = () => {
+  const [page, setPage] = useState(0)
+  return (
   <ChakraProvider theme={theme}>
     <Box>
-      <VStack>
-        <NavigationBar/>
-        <Intro/>
-        <Divider/>
-        <ProjectList/>
-      </VStack>
+      <NavigationBar changePage={()=>setPage}/>
+      <Main page={page}/>
     </Box>
   </ChakraProvider>
-)
+)}

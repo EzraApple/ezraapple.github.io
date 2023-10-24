@@ -1,9 +1,9 @@
-import {HStack, Text} from "@chakra-ui/react";
+import {HStack} from "@chakra-ui/react";
 import Project from "./Project";
 
 export const ProjectList = () => {
     return (
-        <HStack>
+        <HStack justifyContent={'center'}>
             <Project title={'Project 1'}/>
             <Project title={'Project 2'}/>
             <Project title={'Project 3'}/>
