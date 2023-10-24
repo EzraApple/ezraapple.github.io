@@ -7,36 +7,27 @@ const theme = extendTheme({
             body: {
                 fontFamily: 'DM Sans, sans-serif',
                 fontWeight: 700,
-                color: 'gray'
             }
         }
     },
     textStyles: {
         h1: {
-            fontSize: '78px',
+            fontSize: '5vw',
             fontWeight: 700,
-            color: 'gray'
         },
         h2: {
-            fontSize: '52px',
+            fontSize: '3vw',
             fontWeight: 700,
-            color: 'gray'
         },
         body: {
-            fontSize: '20px',
+            fontSize: '1.5vw',
             fontWeight: 700,
-            color: 'gray'
         },
-        bold_body: {
-            fontSize: '24px',
-            fontWeight: 1000,
-            color: 'gray'
-        }
     },
     components: {
         Button: {
             baseStyle: {
-                borderRadius: '7px',
+                borderRadius: '10px',
                 backgroundColor: '#2F80ED',
                 color: 'white'
             },
