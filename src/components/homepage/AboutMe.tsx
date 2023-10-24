@@ -6,7 +6,6 @@ export const AboutMe = () => {
             <Image
                 w={'30vw'}
                 src={'face.jpg'}/>
-            <Text textStyle={'h1'}>About Me</Text>
             <Text>Some stuff about me</Text>
         </VStack>
     );
